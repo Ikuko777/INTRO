@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="INTRO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-uR-D29">
+                                <rect key="frame" x="156" y="104" width="62" height="30"/>
+                                <state key="normal" title="曲を選択"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ3-5m-UAl">
+                                <rect key="frame" x="135" y="142" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VC-dH-K6h">
+                                <rect key="frame" x="170" y="182" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sit-r6-VYW">
+                                <rect key="frame" x="156" y="318" width="62" height="30"/>
+                                <state key="normal" title="３秒流す"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ene-7M-ZxC">
+                                <rect key="frame" x="156" y="356" width="62" height="30"/>
+                                <state key="normal" title="５秒流す"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMU-5p-RxZ">
+                                <rect key="frame" x="156" y="394" width="62" height="30"/>
+                                <state key="normal" title="10秒流す"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3VC-dH-K6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FlQ-A8-cHB"/>
+                            <constraint firstItem="3VC-dH-K6h" firstAttribute="top" secondItem="pJ3-5m-UAl" secondAttribute="bottom" constant="19" id="NSQ-TB-2xI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SMU-5p-RxZ" secondAttribute="bottom" constant="243" id="Rvj-hb-ddb"/>
+                            <constraint firstItem="pMX-uR-D29" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YTH-By-JQE"/>
+                            <constraint firstItem="pJ3-5m-UAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z5A-LD-fcw"/>
+                            <constraint firstItem="pJ3-5m-UAl" firstAttribute="top" secondItem="pMX-uR-D29" secondAttribute="bottom" constant="8" symbolic="YES" id="f2U-Ay-6JH"/>
+                            <constraint firstItem="SMU-5p-RxZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jFs-9h-Og6"/>
+                            <constraint firstItem="Ene-7M-ZxC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m7Y-Fr-Uwq"/>
+                            <constraint firstItem="SMU-5p-RxZ" firstAttribute="top" secondItem="Ene-7M-ZxC" secondAttribute="bottom" constant="8" symbolic="YES" id="mvD-lm-hcX"/>
+                            <constraint firstItem="Ene-7M-ZxC" firstAttribute="top" secondItem="Sit-r6-VYW" secondAttribute="bottom" constant="8" symbolic="YES" id="qKG-Sy-XNF"/>
+                            <constraint firstItem="Sit-r6-VYW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tCQ-bd-xab"/>
+                            <constraint firstItem="pMX-uR-D29" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="xVJ-2U-uiq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
